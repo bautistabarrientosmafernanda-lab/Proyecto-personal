@@ -1,0 +1,249 @@
+:root{
+    --blanco:#ffffff;
+    --negro:#212121;
+    --primario:rgba(255,193,7,1);
+    --secundario:#0097a7;
+    --gris:#757575;
+    --fuente-principal:8rem;
+
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'krub',sans-serif;
+}
+.titulo{
+    text-align:center;
+    font-size:4.5rem;
+    font-family: 'Lilita One',sans-serif;
+}
+.titulo span {
+    font-size:2rem;
+}
+.nav-bg{
+    background-color: var(--gris);
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+.navegacion-principal{
+	 display:flex;
+	 flex-direction:column;
+	 justify-content:space-around;
+	 
+	 
+}
+
+
+.navegacion-principal a{
+	font-size:2rem;
+    color: var(--blanco);
+    text-decoration: none;
+	font-weight:700;
+	padding: 1rem;
+    
+}
+
+
+.navegacion-principal a:hover {
+	 background-color: var(--primario);
+	 padding:1rem;
+	 color: var(--negro);
+	
+}
+
+body {
+	 background-color: yellowgreen;
+	 
+}
+
+@media(min-width: 400px ) {
+	 body{
+	 background-color: plum; 
+	 
+	}
+}
+
+@media(min-width: 768px ) {
+	 body{
+	 background-color: rgb(206, 126, 126); 
+	 
+	}
+}
+
+
+@media(min-width: 768px ) {
+	 .navegacion-principal{
+	 flex-direction:row;
+	
+	}
+}
+ 
+
+
+
+
+.mascota{
+	 background-image:url(mascota.jpg);
+	 background-repeat:no-repeat;
+	 background-size:cover;
+	 position:relative;
+	 height: 350px;
+	 margin-bottom: 2rem;
+	}
+
+.contenido-mascota{
+	position:absolute;
+	background-color: rgb(0 0 0 / .7);
+	background-color: rgb(0 0 0 / 70%);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenido-mascota h2,
+.contenido-mascota p {
+	color: var(--blanco);
+}
+
+.contenido-mascota .ubicacion{ 
+	display: flex;
+	align-items: flex-end;
+}
+
+.boton{
+	background-color: rgb(174, 46, 174);
+	color:var(--blanco);
+	padding: 1rem 3rem;
+	margin-top: 3rem;
+	font-size: 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: .5rem;
+	width: 90%;
+	text-align: center;
+	border: none;
+}
+
+.boton:hover{
+	cursor: pointer;
+}
+
+@media (min-width: 480px) {
+   .boton{
+		width: auto;
+   }
+}
+
+.sombra{
+	box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+	background-color: var(--blanco);
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+h1 {
+	font-size:3.8rem;
+}
+h2{
+	font-size: 2.8rem;
+}
+h3{ 
+	font-size: 1.8rem;
+}
+h1,h2,h3{
+	text-align: center;
+}
+
+
+/*Servicios*/
+
+@media (min-width: 768px) {
+	.servicios{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		column-gap: 1rem;
+	}
+	}
+
+.servicio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.servicio .iconos {
+	height: 15rem;
+	width: 15rem;
+	background-color: rgba(243, 165, 177, 0.637);
+	border-radius: 50%;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.servicio h3 {
+	color:purple;
+	font-weight: normal;
+}
+
+.servicio p {
+	line-height: 2;
+	text-align: center;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.formulario{
+	background-color: var(--gris);
+	width: min(60rem, 100%);
+	margin: 0 auto;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+.formulario fieldset{
+	border: none;
+}
+
+.formulario legend{
+	text-align:center;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	color:purple;
+}
+
+.campo{
+	margin-bottom: 1rem;
+}
+
+.campo label{
+	color:var(--blanco);
+	font-weight: bold;
+	margin-bottom: .5rem;
+	display:block;
+}
+
+.input-text{
+	width: 100%;
+	border: none;
+	padding: 1.5rem;
+	border-radius: .5rem;
+}
+
+.footer{
+	text-align: center;
+}
